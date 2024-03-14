@@ -1,33 +1,65 @@
 import React from 'react'
+import { LuMoon, LuSun } from "react-icons/lu";
+import { IoMale ,IoFemale } from "react-icons/io5";
 import './Home.css'
 const Home = () => {
   return (
     <div className='home-container  calculator-body'>
         <div className="home-mode">
-            mode
+        <LuSun style={{color:'var(--hl)',fill:'var(--hl)'}}/>
+        <LuMoon style={{color:'var(--mode)',fill:'var(--mode)'}}/>
         </div>
         <div className="home-intro">
             <p>Welcome</p>
             <p>BMI Calculator</p>
         </div>
         <div className="male-female-btn">
-            <div className="male-btn">
-                Male
+            <div className="male-btn  btn-active">
+            <IoMale /> Male
             </div>
-            <div className="female-btn">
-                Female
+            <div className="female-btn ">
+            <IoFemale /> Female
             </div>
         </div>
         <div className='home-btns'>
             <div className="home-btns-heights">
-                height
+                
+                <p>Height</p>
+                <div className="height-controles">
+                <div className="height-bar">
+                    <div className="height-bar-progress"/>
+                </div>
+                <div className="height-scale">
+                    <div className='height-scale-elements'><span></span>190</div>
+                    <div className='height-scale-elements'><span></span>180</div>
+                    <div className='height-scale-elements'><span></span>170</div>
+                    <div className='height-scale-elements'><span></span>160</div>
+                    <div className='height-scale-elements'><span></span>150</div>
+                    <div className='height-scale-elements'><span></span>140</div>
+                    <div className='height-scale-elements'><span></span>130</div>
+                    <div className='height-scale-elements'><span></span>120</div>
+                    <div className='height-scale-elements'><span></span>110</div>
+                    <div className='height-scale-elements'><span></span>100</div>
+                    
+                </div>
+                </div>
             </div>
             <div className="home-btns-right">
                 <div className="home-btn-weight">
-                    Weight
+                    <p>Weight</p>
+                    <p>70</p>
+                    <div className="home-btn-smbtn">
+                        <div className="minus">-</div>
+                        <div className="plus">+</div>
+                    </div>
                 </div>
                 <div className="home-btn-age">
-                    Age
+                    <p>Age</p>
+                    <p>23</p>
+                    <div className="home-btn-smbtn">
+                        <div className="minus">-</div>
+                        <div className="plus">+</div>
+                    </div>
                 </div>
             </div>
         </div>

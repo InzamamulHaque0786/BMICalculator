@@ -8,13 +8,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/public/background1.svg);
+  background-image: url(/background1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   
 }
 .calculator-body{
-  --bg:#D1D9E6;
+  --bg:rgba(209, 217, 230, 1);
   --btnbg:#FFFFFF;
   --textB:#000000;
   --textG:#8C8C8C;
