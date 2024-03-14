@@ -1,6 +1,59 @@
 .home-container{
     border: 1px solid black;
-    width: 500px;
+    width: 360px;
     height: 600px;
+    background-color:var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    justify-content: space-between;
+}
+.home-mode{
+    height: 20px;
+    width: 50px;
+    background-color: var(--btnbg);
+    outline: 1px solid red;
+}
+.home-intro{
+    background-color: red;
+    width: 90%;
+}
+.male-female-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
     background-color: blue;
+}
+.male-btn{
+    text-align: center;
+    background-color: green;
+    height: 20px;
+    width: 45%;
+}
+.female-btn{
+    text-align: center;
+    background-color: rgb(164, 196, 164);
+    width: 45%;
+    height: 20px;
+}
+.home-btns{
+ background-color: aquamarine;
+ width: 90%;
+ display: flex;
+ justify-content: space-between;
+ height: 50%;
+}
+.home-btns-heights{
+    width: 45%;
+    background-color: bisque;
+}
+.home-btns-right{
+    width: 45%;
+    background-color: red;
+}
+.home-result-btn{
+    background-color: blueviolet;
+    text-align: center;
+    width: 90%;
 }
