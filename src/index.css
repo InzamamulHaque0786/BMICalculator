@@ -14,20 +14,24 @@ body{
   
 }
 .calculator-body{
-  --bg:rgba(209, 217, 230, 1);
-  --btnbg:#FFFFFF;
-  --textB:#000000;
-  --textG:#8C8C8C;
-  --mode:#D9D9D9;
+  --text1:#000000;
+  --text2:#8C8C8C;
+  --widget:#FFFFFF;
   --hl:#246AFE;
+  --bg:rgba(209, 217, 230, 1);
+  --mode:#D9D9D9;
+  --scalemarks:#8C8C8C;
+
 }
 .calculator-body[data-theme="dark"]{
-  --bg:#525252;
-  --btnbg:#FFFFFF;
-  --textB:#000000;
-  --textG:#8C8C8C;
-  --mode:#D9D9D9;
+  --text1:#FFFFFF;
+  --text2:#8C8C8C;
+  --widget:rgba(55, 55, 55, 1);
   --hl:#246AFE;
+  --bg:rgba(36, 36, 36, 1);
+  --mode:#D9D9D9;
+  --scalemarks:rgba(209, 217, 230, 1);
+
 }
 
 /*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/

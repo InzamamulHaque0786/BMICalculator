@@ -3,7 +3,7 @@ import './Result.css'
 import { Line, Circle } from 'rc-progress';
 const Result = () => {
   return (
-    <div className='result-container calculator-body'>
+    <div className='result-container calculator-body' >
       <div id="back-btn">Back</div>
       <div>Your BMI is</div>
       <div className="bmi-indicator">

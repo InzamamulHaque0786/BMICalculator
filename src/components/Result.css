@@ -1,11 +1,10 @@
 .result-container {
-    /* border: 1px solid black; */
     width: 320px;
     height: 600px;
     background-color: var(--bg);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     padding: 20px 0 20px 0;
     justify-content: space-between;
     border-radius: 8px;
@@ -16,15 +15,16 @@
     font-size: .8rem;
     font-weight: 500;
     margin-left: 30px;
-    /* background-color: red; */
+    color: var(--text1);
+    align-self: flex-start;
 }
 
 .result-container>div:nth-child(2) {
+    align-self: flex-start;
     color: var(--hl);
     margin-left: 30px;
     font-size: 1.5rem;
     font-weight: 600;
-    /* background-color: red; */
 }
 
 .bmi-indicator {
@@ -32,9 +32,7 @@
     text-align: center;
     height: 230px;
     width: 230px;
-    align-self: center;
     transform: rotate(180deg);
-    /* background-color: red; */
 }
 .bmi-indicator-comp {
    transform: rotate(180deg);
@@ -48,33 +46,28 @@
     font-size: 4.5rem;
     font-weight: 700;
     color: var(--hl);
-
 }
 
 .result-container>p:nth-child(4) {
-    align-self: center;
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--hl);
-    /* background-color: red; */
 }
 .result-text {
     width: 90%;
-    background-color: var(--btnbg);
-    align-self: center;
+    background-color: var(--widget);
+    color: var(--text1);
     font-size: .7rem;
-    padding: 5px;
+    padding: 15px 10px;
     border-radius: 8px;
 }
-
 .result-more-btn {
     margin-top: 30px;
-    align-self: center;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--hl);
-    color: var(--btnbg);
+    color: white;
     width: 90%;
     height: 40px;
     border-radius: 8px;

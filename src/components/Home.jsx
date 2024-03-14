@@ -4,7 +4,7 @@ import { IoMale ,IoFemale } from "react-icons/io5";
 import './Home.css'
 const Home = () => {
   return (
-    <div className='home-container  calculator-body'>
+    <div className='home-container  calculator-body' >
         <div className="home-mode">
         <LuSun style={{color:'var(--hl)',fill:'var(--hl)'}}/>
         <LuMoon style={{color:'var(--mode)',fill:'var(--mode)'}}/>

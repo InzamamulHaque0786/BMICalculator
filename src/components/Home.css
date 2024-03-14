@@ -1,63 +1,62 @@
-.home-container{
-    /* border: 1px solid black; */
+.home-container {
     width: 320px;
     height: 600px;
-    background-color:var(--bg);
-    display: flex;
+    background-color: var(--bg);
     flex-direction: column;
-    align-items: center;
     padding: 20px 0 20px 0;
     justify-content: space-between;
     border-radius: 8px;
 }
-.home-mode{
+
+.home-container,
+.home-mode,
+.male-btn,
+.female-btn,
+.home-btns-heights,
+.height-scale-elements,
+.home-btn-weight,
+.home-btn-age,
+.plus,
+.minus,
+.home-result-btn {
     display: flex;
     align-items: center;
+}
+
+.home-mode {
     justify-content: space-around;
     height: 25px;
     width: 80px;
-    background-color: var(--btnbg);
+    background-color: var(--widget);
     border-radius: 8px;
 }
-.home-intro{
-    /* background-color: red; */
+
+.home-intro {
     width: 90%;
 }
-.home-intro p:nth-child(1){
+
+.home-intro p:nth-child(1) {
+    color: var(--text1);
     font-size: 1rem;
     font-weight: 300;
 }
-.home-intro p:nth-child(2){
+
+.home-intro p:nth-child(2) {
+    color: var(--text1);
     font-size: 1.5rem;
     font-weight: 600;
 }
-.male-female-btn{
+
+.male-female-btn {
     display: flex;
     justify-content: space-between;
     width: 90%;
 }
-.male-btn{
-    display: flex;
-    align-items: center;
-    padding-left: 35px;
-    background-color:var(--btnbg);
-    color:var(--hl);
-    width: 47%;
-    height: 40px;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 400;
-    gap: 10px;
 
-
-}
-.female-btn{
-    display: flex;
-    align-items: center;
-    padding-left: 25px;
-    text-align: center;
-    background-color:var(--btnbg);
-    color:var(--hl);
+.male-btn,
+.female-btn {
+    background-color: white;
+    color: var(--hl);
     width: 47%;
     height: 40px;
     border-radius: 8px;
@@ -65,83 +64,87 @@
     font-weight: 400;
     gap: 10px;
 }
-.btn-active{
-    background-color:var(--hl);
-    color:var(--btnbg);
+
+.male-btn {
+    padding-left: 30px;
 }
-.home-btns{
- /* background-color: aquamarine; */
- width: 90%;
- display: flex;
- justify-content: space-between;
- height: 57%;
+
+.female-btn {
+    padding-left: 22px;
 }
-.home-btns-heights{
+
+.btn-active {
+    background-color: var(--hl);
+    color: white;
+}
+
+.home-btns {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    height: 57%;
+}
+
+.home-btns-heights {
     padding: 10px 0 10px 0;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     border-radius: 8px;
     width: 47%;
-    background-color:var(--btnbg)
+    background-color: var(--widget)
 }
-.height-controles{
+
+.height-controles {
     height: 90%;
     width: 75%;
     display: flex;
     justify-content: space-between;
     /* background-color: red; */
 }
-.height-bar{
+
+.height-bar {
     display: flex;
-    align-items:end ;
+    align-items: end;
     overflow-y: hidden;
     border-radius: 30px;
     width: 18%;
-    background-color:var(--bg);
+    background-color: rgba(209, 217, 230, 1);
 }
-.height-bar-progress{
+
+.height-bar-progress {
     height: 50%;
     width: 100%;
-    border-radius:30px ;
-    background-color:var(--hl);
+    border-radius: 30px;
+    background-color: var(--hl);
 }
 
 
-.height-scale{
+.height-scale {
     width: 65%;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     /* background-color: black; */
 }
-.height-scale-elements{
-    display: flex;
-    align-items: center;
+
+.height-scale-elements {
+
     justify-content: space-between;
     width: 100%;
-    color: var(--textG);
+    color: var(--scalemarks);
     font-size: .7rem;
     font-weight: 400;
 }
-.height-scale-elements span{
+
+.height-scale-elements span {
     display: block;
     height: 1px;
     width: 40px;
-    border: 1px solid var(--textG);
-    background-color:var(--textG);
+    border: 1px solid var(--text2);
+    background-color: var(--text2);
 }
 
-
-
-
-
-
-
-
-
-.home-btns-right{
+.home-btns-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,71 +152,55 @@
     width: 47%;
     /* background-color: red; */
 }
-.home-btn-weight{
+
+.home-btn-weight,
+.home-btn-age {
     padding: 10px 0 10px 0;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     border-radius: 8px;
     height: 47%;
-    background-color: var(--btnbg);
+    background-color: var(--widget);
     /* background-color: orange; */
 }
-.home-btn-weight p:nth-child(1),.home-btn-age p:nth-child(1),.home-btns-heights > p:nth-child(1){
+
+.home-btn-weight p:nth-child(1),
+.home-btn-age p:nth-child(1),
+.home-btns-heights>p:nth-child(1) {
     font-size: .8rem;
     font-weight: 400;
-    color: var(--textG);
+    color: var(--text2);
 }
-.home-btn-weight p:nth-child(2),.home-btn-age p:nth-child(2){
+
+.home-btn-weight p:nth-child(2),
+.home-btn-age p:nth-child(2) {
     font-size: 3rem;
     font-weight: 600;
+    color: var(--text1);
 }
-.home-btn-age{
-    padding: 10px 0 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 8px;
-    height: 47%;
-    background-color: var(--btnbg);
-/* background-color: green; */
-}
-.home-btn-smbtn{
+
+.home-btn-smbtn {
     display: flex;
     width: 70%;
     justify-content: space-between;
 }
-.plus{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--hl);
-  height: 36px;
-  width: 36px;
-  color: var(--btnbg);
-  border-radius: 8px;
-  font-size: 1.8rem;
-  font-weight: 200;
-}
-.minus{
-    color: var(--btnbg);
-    display: flex;
+
+.plus,
+.minus {
     justify-content: center;
     background-color: var(--hl);
     height: 36px;
     width: 36px;
+    color: white;
     border-radius: 8px;
     font-size: 1.8rem;
     font-weight: 200;
 }
-.home-result-btn{
-    display: flex;
-    align-items: center;
+
+.home-result-btn {
     justify-content: center;
-    background-color:var(--hl);
-    color:var(--btnbg);
+    background-color: var(--hl);
+    color: white;
     width: 90%;
     height: 40px;
     border-radius: 8px;
