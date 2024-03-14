@@ -30,6 +30,23 @@
     background-color: var(--widget);
     border-radius: 8px;
 }
+.home-mode-icon{
+  fill: var(--mode);
+  color: var(--mode);
+}
+.home-mode-icon-active{
+    fill: var(--hl);
+    color: var(--hl);
+}
+
+.home-mode-light{
+  color: var(--hl);
+  fill: var(--hl);
+}
+.home-mode-dark{
+  color: var(--hl);
+  fill: var(--hl);
+}
 
 .home-intro {
     width: 90%;

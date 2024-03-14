@@ -1,9 +1,9 @@
 import React from 'react'
 import './Result.css'
 import { Line, Circle } from 'rc-progress';
-const Result = () => {
+const Result = ({mode}) => {
   return (
-    <div className='result-container calculator-body' >
+    <div className='result-container calculator-body' data-theme={`${mode?'dark':"light"}`}>
       <div id="back-btn">Back</div>
       <div>Your BMI is</div>
       <div className="bmi-indicator">

@@ -2,12 +2,19 @@ import React from 'react'
 import { LuMoon, LuSun } from "react-icons/lu";
 import { IoMale ,IoFemale } from "react-icons/io5";
 import './Home.css'
-const Home = () => {
+const Home = ({mode,toggleMode}) => {
+  const setLight=()=>{
+    toggleMode(false);
+  }
+  const setDark=()=>{
+    toggleMode(true);
+  }
+
   return (
-    <div className='home-container  calculator-body' >
+    <div className='home-container  calculator-body' data-theme={`${mode?'dark':"light"}`}>
         <div className="home-mode">
-        <LuSun style={{color:'var(--hl)',fill:'var(--hl)'}}/>
-        <LuMoon style={{color:'var(--mode)',fill:'var(--mode)'}}/>
+        <LuSun onClick={setLight} className={`${mode?'home-mode-icon':'home-mode-icon-active'}`} />
+        <LuMoon onClick={setDark} className={`${!mode?'home-mode-icon':'home-mode-icon-active'}`} />
         </div>
         <div className="home-intro">
             <p>Welcome</p>
